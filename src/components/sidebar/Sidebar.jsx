@@ -25,7 +25,7 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
       <div className='sidebar__logo'>
-        <img src alt='company logo' />
+        <img src='' alt='company logo' />
       </div>
       {sidebar__items.map((item, index) => (
         <Link to={item.route} key={index}>

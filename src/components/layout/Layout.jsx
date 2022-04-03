@@ -43,11 +43,11 @@ const Layout = () => {
     color && dispatch(setThemeColor(color));
   }, [dispatch]);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/dashboard'>
       <Routes>
-        <Route path='/' element={<Inside />}>
+        <Route path='' element={<Inside />}>
           <Route index element={<Dashboard />}></Route>
-          <Route path='customers' element={<Customers />}></Route>
+          <Route path='/customers' element={<Customers />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

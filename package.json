@@ -1,5 +1,6 @@
 {
   "name": "responsive-admin-dashboard",
+  "homepage": "https://tientaxuan.github.io/dashboard",
   "version": "0.1.0",
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
@@ -14,6 +15,8 @@
     "sass": "^1.49.9"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +37,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
