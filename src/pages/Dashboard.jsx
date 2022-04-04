@@ -142,10 +142,10 @@ const Dashboard = () => {
     <div>
       <h2 className='page-header'>Dashboard</h2>
       <div className='row'>
-        <div className='col-6 col-md-4 col-sm-12'>
+        <div className='col-6 col-md-12 col-sm-12'>
           <div className='row'>
             {statusCards.map((item, index) => (
-              <div className='col-6 col-md-12 col-sm-12' key={index}>
+              <div className='col-6 col-md-6 col-sm-12' key={index}>
                 {item.title}
                 <StatusCard
                   icon={item.icon}
@@ -156,7 +156,7 @@ const Dashboard = () => {
             ))}
           </div>
         </div>
-        <div className='col-6 col-md-8 col-sm-0'>
+        <div className='col-6 col-md-12 col-sm-12'>
           <div
             className='card full-height'
             style={{

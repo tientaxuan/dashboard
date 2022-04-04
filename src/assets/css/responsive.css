@@ -1,4 +1,9 @@
 @media only screen and (max-width: 1280px) {
+  .card.full-height {
+    height: 300px !important;
+    transform: translateY(-20px) !important;
+    margin: 10px 0 !important;
+  }
 }
 @media only screen and (max-width: 500px) {
   .layout {
@@ -33,5 +38,13 @@
   }
   .theme-menu {
     width: 150px !important;
+  }
+  .dropdown__content {
+    max-width: 200px !important;
+  }
+  .card.full-height {
+    height: 300px !important;
+    transform: translateY(-20px) !important;
+    margin: 10px 0 !important;
   }
 }
