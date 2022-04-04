@@ -9,6 +9,10 @@
   padding: 0 15px;
 }
 
+.col-0 {
+  width: 0px;
+}
+
 .col-1 {
   width: 8.33%;
 }
@@ -60,6 +64,9 @@
 /* MEDIUM SCREEN */
 
 @media only screen and (max-width: 1280px) {
+  .col-md-0 {
+    width: 0px;
+  }
   .col-md-1 {
     width: 8.33%;
   }
@@ -112,6 +119,9 @@
 /* SMALL SCREEN */
 
 @media only screen and (max-width: 500px) {
+  .col-sm-0 {
+    width: 0px;
+  }
   .col-sm-1 {
     width: 8.33%;
   }

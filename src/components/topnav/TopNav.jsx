@@ -47,8 +47,15 @@ const renderUserMenu = (item, index) => (
 );
 
 const TopNav = () => {
+  const handleTopnavHamburger = () => {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+  };
   return (
     <div className='topnav'>
+      <div className='topnav__hamburger' onClick={handleTopnavHamburger}>
+        <i className='bx bx-menu'></i>
+      </div>
       <div className='topnav__search'>
         <input type='text' placeholder='Search here' />
         <i className='bx bx-search'></i>

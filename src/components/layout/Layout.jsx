@@ -23,8 +23,8 @@ const Inside = (props) => {
       className={`layout theme-mode-${customTheme.mode} theme-color-${customTheme.color}`}
     >
       <Sidebar {...props} />
+      <TopNav />
       <div className='layout__content'>
-        <TopNav />
         <div className='layout__content-main'>
           <Outlet />
         </div>
