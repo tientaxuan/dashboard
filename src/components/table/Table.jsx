@@ -24,8 +24,7 @@ const Tablle = (props) => {
 
   const marginPageLeft = currPage - 2 >= 0 ? currPage - 2 : 0;
 
-  const marginPageRight =
-    currPage + 2 <= range.slice(-1) ? currPage + 2 : range.slice(-1);
+  const marginPageRight = currPage + 2 <= lastPage ? currPage + 2 : lastPage;
 
   const rangeShow = range.slice(marginPageLeft, marginPageRight + 1);
 
